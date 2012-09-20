@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400,300);
+body {
+  background: white url(/img/bg-foxed.jpg) fixed 50% 50% no-repeat;
+  background-size: cover;
+  font-family: "Rokkitt", serif;
+  margin: 1em 0 0; }
+
+a, a:link {
+  color: #990000;
+  text-decoration: none;
+  border-bottom: 1px dotted #990000; }
+
+a:visited {
+  color: #993333; }
+
+a:hover, a:active {
+  color: #cc0000;
+  border-bottom: 1px solid #cc0000; }
+
+h1 {
+  color: #990000;
+  font-size: 3em;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em 0;
+  line-height: 1.1;
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888; }
+
+.inside h1 {
+  font-size: 1.7em; }
+  .inside h1 span {
+    color: #000; }
+  .inside h1 a {
+    border-bottom: 0px; }
+
+h2 {
+  font-size: 1.7em;
+  line-height: 1.1;
+  margin: 0 0 0.2em; }
+
+h1, h2, h4, h5 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+h3 {
+  clear: left;
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.1;
+  color: #888888;
+  margin: 1em 0 0.5em; }
+
+p {
+  line-height: 1.2;
+  margin: 0.7em 0; }
+
+p + p {
+  text-indent: 1.2em; }
+
+p.noindent {
+  text-indent: 0; }
+
+.nav-stacked {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4em;
+  line-height: 1.1; }
+  .nav-stacked li {
+    padding: 0 0 0.5em; }
+  .nav-stacked a {
+    border-bottom: 0px solid #fff;
+    color: #000; }
+  .nav-stacked a:hover {
+    color: #990000; }
+  .nav-stacked .active a {
+    background: #990000; }
+
+img.bookcover {
+  width: 40%;
+  height: auto;
+  margin: 0 1em 1em 0;
+  float: left; }
+
+.hidden {
+  display: none; }
+
+.well h4 {
+  margin: 0; }
+.well p {
+  margin: 0.5em 0 0;
+  font-size: 0.8em; }
+
+#footer {
+  margin: 3em 0 0;
+  padding: 1em 0 10em;
+  background: #54544e;
+  color: #e3e3d4; }
+  #footer h3 {
+    color: #e3e3d4; }
+  #footer a, #footer a:link {
+    color: #e3e3d4;
+    border-bottom: 1px dotted #e3e3d4; }
+  #footer a:visited {
+    color: #e3e3d4; }
+  #footer .addthis_toolbox {
+    color: #000; }
+    #footer .addthis_toolbox a, #footer .addthis_toolbox a:link {
+      color: #000;
+      border-bottom: 0px; }
+  #footer .tinylinks {
+    text-align: right; }

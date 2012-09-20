@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400,300);
+
+$bodyText: "Rokkitt", serif;
+$headText: "Oswald", sans-serif;
+
+$bgColor: #fff;
+$textColor: #333;
+$headColor: #900;
+$lightHeadColor: #888;
+$linkColor: #900;
+$linkVisitedColor: #933;
+$linkActiveColor: #c00;
+$lightGrey: #e3e3d4;
+$darkGrey: #54544e;
+
+
+body {
+	background: $bgColor url(/img/bg-foxed.jpg) fixed 50% 50% no-repeat;
+	background-size: cover;
+	font-family: $bodyText;
+	margin: 1em 0 0;
+}
+
+a, a:link {
+	color: $linkColor;
+	text-decoration: none;
+	border-bottom: 1px dotted $linkColor;
+}
+
+a:visited {
+	color: $linkVisitedColor;
+}
+
+a:hover, a:active {
+	color: $linkActiveColor;
+	border-bottom: 1px solid $linkActiveColor;
+}
+
+h1 {
+	color: $headColor;
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	padding: 0.5em 0;
+	line-height: 1.1;
+	border-top: 1px solid $lightHeadColor;
+	border-bottom: 1px solid $lightHeadColor;
+}
+
+.inside {
+	h1 {
+		font-size: 1.7em;
+		span {
+			color: #000;
+		}
+		a {
+			border-bottom: 0px;
+		}
+	}
+}
+
+h2 {
+	font-size: 1.7em;
+	line-height: 1.1;
+	margin: 0 0 0.2em;
+}
+
+h1, h2, h4, h5 {
+	text-transform: uppercase;
+	font-family: $headText;
+}
+
+h3 {
+	clear: left;
+	font-size: 1.4em;
+	font-weight: 300;
+	font-family: $headText;
+	line-height: 1.1;
+	color: $lightHeadColor;
+	margin: 1em 0 0.5em;
+}
+
+p {
+	line-height: 1.2;
+	margin: 0.7em 0;
+}
+
+p + p {
+	text-indent: 1.2em;
+}
+
+p.noindent {
+	text-indent: 0;
+}
+
+.nav-stacked {
+	text-transform: uppercase;
+	font-family: $headText;
+	font-size: 1.4em;
+	line-height: 1.1;
+	li {
+		padding: 0 0 0.5em;
+	}
+	a {
+		border-bottom: 0px solid #fff;
+		color: #000;
+	}
+	a:hover {
+		color: $headColor;
+	}
+	.active a {
+		background: $linkColor;		
+	}
+}
+
+img.bookcover{
+	width: 40%;
+	height: auto;
+	margin: 0 1em 1em 0;
+	float: left;
+}
+
+.section {
+
+}
+
+.hidden {
+	display: none;
+}
+
+.well {
+	h4 {
+		margin: 0;
+	}
+	p {
+		margin: 0.5em 0 0;
+		font-size: 0.8em;
+	}
+}
+
+#footer {
+	margin: 3em 0 0;
+	padding: 1em 0 10em;
+	background: $darkGrey;
+	color: $lightGrey;
+	h3 {
+		color: $lightGrey;
+	}
+	a, a:link {
+		color: $lightGrey;
+		border-bottom: 1px dotted $lightGrey;
+	}
+
+	a:visited {
+		color: $lightGrey;
+	}
+	.addthis_toolbox {
+		color: #000;
+		a, a:link {
+			color: #000;
+			border-bottom: 0px;
+		}
+	}
+	.tinylinks {
+		text-align: right;
+	}
+}
+
