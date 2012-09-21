@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400);
 body {
-  background: white url(/img/bg-foxed.jpg) fixed 50% 50% no-repeat;
+  background: white url(/img/bg-paper.jpg) fixed 50% 50% no-repeat;
   background-size: cover;
   font-family: "Rokkitt", serif;
   font-weight: 400;
@@ -27,8 +27,8 @@ h1 {
   margin: 0 0 0.5em 0;
   padding: 0.5em 0;
   line-height: 1.1;
-  border-top: 1px solid #888888;
-  border-bottom: 1px solid #888888; }
+  border-top: 2px solid #9a9a90;
+  border-bottom: 2px solid #9a9a90; }
 
 .inside h1 {
   font-size: 1.7em; }
@@ -53,7 +53,7 @@ h3 {
   clear: left;
   font-size: 1.4em;
   line-height: 1.1;
-  color: #888888;
+  color: #54544e;
   margin: 1em 0 0.5em; }
 
 p {
@@ -66,6 +66,16 @@ p + p {
 p.noindent {
   text-indent: 0; }
 
+.table td {
+  border-color: #9a9a90;
+  border-style: dotted; }
+.table th {
+  background: #9a9a90;
+  color: white;
+  border: 0px solid #9a9a90; }
+.table tr.first td {
+  border: 0px solid #9a9a90; }
+
 .nav-stacked {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -77,7 +87,8 @@ p.noindent {
     border-bottom: 0px solid #fff;
     color: #000; }
   .nav-stacked a:hover {
-    color: #990000; }
+    color: #990000;
+    background: white; }
   .nav-stacked .active a {
     background: #990000; }
 
@@ -98,7 +109,7 @@ img.bookcover {
 
 #footer {
   margin: 3em 0 0;
-  padding: 1em 0 10em;
+  padding: 1em 1px 10em;
   background: #54544e;
   color: #e3e3d4; }
   #footer h3 {

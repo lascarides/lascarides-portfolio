@@ -6,16 +6,17 @@ $headText: "Oswald", sans-serif;
 $bgColor: #fff;
 $textColor: #333;
 $headColor: #900;
-$lightHeadColor: #888;
+$lightHeadColor: #54544e;
 $linkColor: #900;
 $linkVisitedColor: #933;
 $linkActiveColor: #c00;
 $lightGrey: #e3e3d4;
+$mediumGrey: #9a9a90;
 $darkGrey: #54544e;
 
 
 body {
-	background: $bgColor url(/img/bg-foxed.jpg) fixed 50% 50% no-repeat;
+	background: $bgColor url(/img/bg-paper.jpg) fixed 50% 50% no-repeat;
 	background-size: cover;
 	font-family: $bodyText;
 	font-weight: 400;
@@ -47,8 +48,8 @@ h1 {
 	margin: 0 0 0.5em 0;
 	padding: 0.5em 0;
 	line-height: 1.1;
-	border-top: 1px solid $lightHeadColor;
-	border-bottom: 1px solid $lightHeadColor;
+	border-top: 2px solid $mediumGrey;
+	border-bottom: 2px solid $mediumGrey;
 }
 
 .inside {
@@ -99,6 +100,22 @@ p.noindent {
 	text-indent: 0;
 }
 
+.table {
+	td {
+		border-color: $mediumGrey;
+		border-style: dotted;
+	}
+	th {
+		background: $mediumGrey;
+		color: white;
+		border: 0px solid $mediumGrey;
+	}
+	tr.first td {
+		border: 0px solid $mediumGrey;
+	}
+
+}
+
 .nav-stacked {
 	text-transform: uppercase;
 	font-family: $headText;
@@ -113,6 +130,7 @@ p.noindent {
 	}
 	a:hover {
 		color: $headColor;
+		background: white;		
 	}
 	.active a {
 		background: $linkColor;		
@@ -146,7 +164,7 @@ img.bookcover{
 
 #footer {
 	margin: 3em 0 0;
-	padding: 1em 0 10em;
+	padding: 1em 1px 10em;
 	background: $darkGrey;
 	color: $lightGrey;
 	h3 {
