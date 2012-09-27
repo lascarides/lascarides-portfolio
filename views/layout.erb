@@ -53,7 +53,7 @@
             <div class="span3 side-nav">
 
                 <ul class="nav nav-pills nav-stacked">
-                    <% ['work', 'art', 'teaching', 'writing', 'speaking', 'contact'].each do |section| %>
+                    <% ['work', 'art', 'writing', 'teaching', 'speaking', 'contact'].each do |section| %>
                         <% if params[:page] == section %>
                         <li class="active"><a href="/<%= section %>"><%= section %></a></li>
                         <% else %>

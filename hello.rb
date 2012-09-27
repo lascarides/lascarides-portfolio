@@ -17,3 +17,9 @@ not_found do
 	params[:page] = "404"
 	erb :fourohfour
 end
+
+before do
+  headers "Content-Type" => "text/html; charset=utf-8"
+  cache_control :public, :must_revalidate, :max_age => 600
+end
+

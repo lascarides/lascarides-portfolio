@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400);
 body {
-  background: white url(/img/bg-paper.jpg) fixed 50% 50% no-repeat;
+  background: #f6ebd7 url(/img/bg-paper.jpg) fixed 50% 50% no-repeat;
   background-size: cover;
   font-family: "Rokkitt", serif;
   font-weight: 400;
