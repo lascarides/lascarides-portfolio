@@ -1,0 +1,61 @@
+#myCarousel.carousel.slide
+    - f = true
+    .carousel-inner
+        - [["What's on the Menu?", "menu", "2011"], ["Bliss Spa", "bliss", "2004-2008"], ["Infomaki", "infomaki", "2009"], ["Taranto Labs", "ken", "2010"], ["Etro", "etro", "1999"] ].each do |title,slug,year|
+            .item{:class => f ? 'active' : ''}
+                - f = false
+                %img{:src => "/img/portfolio-#{slug}.jpg", :alt => title}
+                .carousel-caption
+                    %p
+                        %strong= title
+                        = year
+    %a.carousel-control.left{:href => "#myCarousel", "data-slide".to_sym => "prev"}
+        = '&lsaquo;'
+    %a.carousel-control.right{:href => "#myCarousel", "data-slide".to_sym => "next"}
+        = '&rsaquo;'
+
+%h3= "Design strategy"
+
+%p 
+    First and foremost, I believe that good design must be a big-picture endeavor. It is not enough to choose the right colors and layout for your application if you do not understand 
+    %em
+        how and why people are going to use it
+    = "."
+
+%p 
+    What are the trends and innovations that are going to shape your market? How do you tell the fads apart from the important paradigm shifts? What is the difference between how your audience perceives your products and how you think they do? These important questions must be understood before truly great applications and services and can be created, and I understand how to properly answer those questions.
+
+%p 
+    (My team's work at the New York Public Library, where I was honored to have the chance to work with wonderful colleagues on just this sort of big-picture thinking, was profiled in the Atlantic Monthly's 2011 article "
+    %a{:href => "http://www.theatlantic.com/technology/archive/2011/06/what-big-media-can-learn-from-the-new-york-public-library/240565/"}
+        What Big Media Can Learn From The New York Public Library
+    " by Alexis Madrigal.)
+
+%h3= "User experience / information architecture"
+
+%p 
+    To create user interfaces that are highly functional as well as beautiful requires an understanding of how people use software as well as an eye for visual design.
+
+%p 
+    I'm skilled at understanding workflows, finding the important stories in mountains of user data, building useful profiles of audiences, and listening to how they use Web and other applications. I've done hundreds of in-person user interviews, observing the often counterintuitive way software gets used by non-experts. I can help you get to the stories your audience is telling you about what works and what doesn't about your products, and turn that into design improvements. 
+
+
+%h3= "Web development"
+
+%p 
+    Once I've determined what needs to be built, I can build it for you as well. I have over 15 years experience as a professional web developer. I am comfortable with building web applications from concept to completion, and from the user interface to the database server.
+
+%p 
+    My front-end skills include expert-level HTML (including HTML5), CSS (through CSS3 and browser-specific extensions), Javascript (including JQuery, Paper.js, CoffeeScript and more), as well as expertise in issues of cross-browser issues, web color, responsive design techniques, and web typography.
+
+%p 
+    On the back-end, I'm an expert Ruby on Rails developer, with dozens of finished Rails sites under my belt. I also have experience with PHP (including Drupal, CakePHP and WordPress) and multiple database platforms (MySQL, PostgreSQL, SQLite). I prefer to work in a test-driven/behavior-driven environment with open-source tools. 
+
+%h3= "Mobile app and game design"
+
+%p 
+    With the rise of smartphones, mobile web and app design is ever increasing in importance, and has become an area of nearly unlimited possibilities. I have designed and built mobile device-friendly web sites and iOS applications for a variety of uses, including a soon-to-be-released strategy game for the iPhone and iPad.
+
+%p 
+    Recently, I have become adept with responsive design techniques (primarily with the Twitter Bootstrap toolkit) to maximize the number of devices that can utilize a single codebase. Additionally, my years of building sites in the Web's resource-starved early years has prepared me well for building tools that perform well on tiny screens and with limited bandwith.
+

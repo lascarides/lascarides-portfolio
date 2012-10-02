@@ -6,6 +6,11 @@ body {
   font-weight: 400;
   margin: 1em 0 0; }
 
+body.project {
+  background: #54544e;
+  color: #f6ebd7;
+  margin: 0; }
+
 a, a:link {
   color: #990000;
   text-decoration: none;
@@ -37,6 +42,39 @@ h1 {
   .inside h1 a {
     border-bottom: 0px; }
 
+.project h1 {
+  background: #e3e3d4 url(/img/bg-paper.jpg) 50% 50% no-repeat;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0.3em;
+  border-top: 0px solid #000;
+  border-bottom: 2px solid #000; }
+  .project h1 span {
+    color: #000; }
+  .project h1 a {
+    border-bottom: 0px; }
+.project h3 {
+  color: #e3e3d4; }
+.project h3.pullHed {
+  margin: 0.3em 0 0; }
+.project .main {
+  padding: 2em 0; }
+.project code {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  white-space: pre; }
+.project strong {
+  color: white; }
+.project .featuredRow {
+  background: #9a9a90;
+  padding: 1em 0;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em; }
+.project #footer {
+  background: #2f2f2c; }
+
 h2 {
   font-size: 1.7em;
   line-height: 1.1;
@@ -57,8 +95,10 @@ h3 {
   margin: 1em 0 0.5em; }
 
 p {
-  line-height: 1.2;
   margin: 0.7em 0; }
+
+p, li, code {
+  line-height: 1.2; }
 
 p + p {
   text-indent: 1.2em; }
@@ -126,3 +166,6 @@ img.bookcover {
       border-bottom: 0px; }
   #footer .tinylinks {
     text-align: right; }
+
+.projects h3 {
+  margin: 0; }

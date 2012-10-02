@@ -1,0 +1,12 @@
+.projects
+	- pj = []
+	- pj <<	{ :title => "Simple Swatch Picker", :slug => 'ssp', :description => 'A tiny, super-clean color picker widget for JQuery.' }
+	- pj.each do |p|
+		.row
+			.span2
+				%a{:href => "/projects/" + p[:slug]}
+					%img{:src => "/img/icon-pj-" + p[:slug] + ".png", :alt => p[:title]+ " icon"}
+			.span5
+				%h3
+					%a{:href => "/projects/" + p[:slug]}= p[:title]
+				%p= p[:description]

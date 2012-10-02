@@ -1,21 +1,32 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 
 sections = ['work', 'art', 'teaching', 'writing', 'speaking', 'contact', 'colophon']
+projects = ['ssp']
 
 get '/' do
-	erb :index
+	haml :index
 end
 
+get '/projects' do
+	params[:page] = 'projects'
+	haml :'projects/index'
+end
+
+get '/projects/:page' do
+  pass unless projects.include? params[:page]
+	haml :"projects/#{params[:page]}", {:layout => :"projects/layout"}
+end
 
 get '/:page' do
   pass unless sections.include? params[:page]
-	erb params[:page].to_sym
+	haml params[:page].to_sym
 end
 
 not_found do
 	params[:page] = "404"
-	erb :fourohfour
+	haml :fourohfour
 end
 
 before do

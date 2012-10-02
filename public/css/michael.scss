@@ -3,24 +3,31 @@
 $bodyText: "Rokkitt", serif;
 $headText: "Oswald", sans-serif;
 
-$bgColor: #f6ebd7;
 $textColor: #333;
 $headColor: #900;
 $lightHeadColor: #54544e;
 $linkColor: #900;
 $linkVisitedColor: #933;
 $linkActiveColor: #c00;
+$veryLightGrey: #f6ebd7;
 $lightGrey: #e3e3d4;
 $mediumGrey: #9a9a90;
 $darkGrey: #54544e;
+$veryDarkGrey: #2f2f2c;
 
 
 body {
-	background: $bgColor url(/img/bg-paper.jpg) fixed 50% 50% no-repeat;
+	background: $veryLightGrey url(/img/bg-paper.jpg) fixed 50% 50% no-repeat;
 	background-size: cover;
 	font-family: $bodyText;
 	font-weight: 400;
 	margin: 1em 0 0;
+}
+
+body.project {
+	background: $darkGrey;
+	color: $veryLightGrey;
+	margin: 0;
 }
 
 a, a:link {
@@ -64,6 +71,51 @@ h1 {
 	}
 }
 
+.project {
+	h1 {
+		background: $lightGrey url(/img/bg-paper.jpg) 50% 50% no-repeat;
+		font-size: 1.3em;
+		margin: 0;
+		padding: 0.3em;
+		border-top: 0px solid #000;
+		border-bottom: 2px solid #000;
+		span {
+			color: #000;
+		}
+		a {
+			border-bottom: 0px;
+		}
+	}
+	h3 {
+		color: $lightGrey;
+	}
+	h3.pullHed {
+		margin: 0.3em 0 0;
+	}
+	.main {
+		padding: 2em 0;
+	}
+	code {
+		display: block;
+		margin: 0.5em 0;
+		padding: 0.5em;
+		white-space: pre;
+	}
+	strong {
+		color: white;
+	}
+	.featuredRow {
+		background: $mediumGrey;
+		padding: 1em 0;
+		-webkit-border-radius: 1em;
+		-moz-border-radius: 1em;
+		border-radius: 1em;
+	}
+	#footer {
+		background: $veryDarkGrey;
+	}
+}
+
 h2 {
 	font-size: 1.7em;
 	line-height: 1.1;
@@ -88,8 +140,11 @@ h3 {
 }
 
 p {
-	line-height: 1.2;
 	margin: 0.7em 0;
+}
+
+p, li, code {
+	line-height: 1.2;
 }
 
 p + p {
@@ -190,3 +245,8 @@ img.bookcover{
 	}
 }
 
+.projects {
+	h3 {
+		margin: 0;
+	}
+}

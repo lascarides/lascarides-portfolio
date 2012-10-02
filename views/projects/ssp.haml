@@ -1,0 +1,186 @@
+%link{:href => "/css/projects/simpleSwatchPicker.css", :rel => "stylesheet"} 
+%script{:src => "/js/projects/jquery.simpleSwatchPicker.min.js", :type => "text/javascript"} 
+.container.main
+    .row
+        .span3
+            %img{:src => "/img/icon-pj-ssp.png", :alt => "Simple Swatch Picker icon"}
+        .span9
+            %h2
+                Simple Swatch Picker
+            %h4
+                A JQuery color picker plugin
+
+            %a.btn.btn-large.btn-primary{:href => "https://github.com/lascarides/simpleswatchpicker/zipball/master"}
+                = "Download .Zip"
+
+            %a.btn.btn-large{:href => "https://github.com/lascarides/simpleswatchpicker"}
+                Source (@ GitHub)
+
+    .row
+        .span3
+            %h3.pullHed
+                Why another color picker?
+        .span9
+            %ul
+                %li
+                    %strong
+                        It's tiny.
+                    Just 2.6kB of Javascript in the minified version, just a smidgen of CSS to go with it, and no images.
+                %li
+                    %strong
+                        It's versatile.
+                    Options control what range of colors goes in the palette, the number of rows and columns of colors, and even the size and shape of the swatches (using only CSS).
+                %li
+                    %strong
+                        It's simple.
+                    Need a full-featured Photoshop-style color picker for a design project? This ain't it. But sometimes you just want a super-basic picker for color-coding folder tabs, or inboxes, or avatars. With Simple Swatch Picker, create a text field in your application, add one line of code, and you've got it.
+                %li
+                    %strong
+                        It's elegant.
+                    No cruft, no eyedroppers, no RGB or Hex codes showing. Just a sweet little grid of chips and one big selected swatch.
+
+            %p
+                The Simple Swatch Picker installs in seconds, and attaches a beautiful rainbow of colors from either one of the preset palettes or your own custom palette.
+
+    .row
+        .span3
+            %h3.pullHed
+                Basic usage
+        .span9
+
+            %p
+                To activate Simple Swatch Picker, simply include JQuery, the plugin file and the CSS file in your HTML page, then use the following Jquery statement to add the picker to the form field of your choice:
+
+            %h4
+                To add a Simple Swatch Picker to this hidden form field:
+
+            %code
+                &lt;input type="hidden" id="myField"&gt;
+
+            %h4
+                Add this code to your page:
+            %code 
+                &lt;script type="text/javascript"&gt;
+                $("#myField").simpleSwatchPicker();
+                &lt;/script&gt;
+
+    .row.featuredRow
+        .span3
+            %h3.pullHed
+                Try it here!
+        .span9
+
+            %form
+                %input#myField{:type => 'hidden'}
+
+            %a.btn#myButton
+                Click here to see what color is stored in hidden field.
+
+            %script{:type => "text/javascript"}
+                $("#myField").simpleSwatchPicker();
+                $("#myButton").click(function(){alert($("#myField").val()=='' ? "Color not set yet.":"Hidden form field set to '" + $("#myField").val() + "'!");});
+
+
+    .row
+        .span3
+            %h3.pullHed
+                Options
+        .span9
+
+            %p
+                You can customize the look and behavior of your Simple Swatch Picker by invoking it with any of the options below. 
+
+            %table.table
+                %tr
+                    %th
+                        Option
+                    %th
+                        Description
+
+                %tr
+                    %td
+                        %p
+                            'palette'
+                        %p.noindent
+                            (One of 'default', 'moody', 'pastel', 'primary', 'warm', or 'cool')
+                    %td
+                        %p
+                            Changes the colors in the palette to any one of the following presets:
+
+                        %h4 
+                            'default'
+                        %img{:src => '/img/projects/ssp/default.png', :alt => 'Default palette'}
+                        %p
+                            If you don't specify a value for 'palette', you'll get this slightly desaturated, medium value set of colors.
+
+                        %h4 
+                            'pastel'
+                        %img{:src => '/img/projects/ssp/pastel.png', :alt => 'Pastel palette'}
+                        %p
+                            Light, unsaturated colors, suitable for using as backgrounds behind black type.
+
+                        %h4 
+                            'moody'
+                        %img{:src => '/img/projects/ssp/moody.png', :alt => 'Moody palette'}
+                        %p
+                            Dark, rich colors, suitable for using as backgrounds behind white type.
+
+                        %h4 
+                            'primary'
+                        %img{:src => '/img/projects/ssp/primary.png', :alt => 'Primary palette'}
+                        %p
+                            Bright, sunny, saturated colors.
+
+                        %h4 
+                            'warm'
+                        %img{:src => '/img/projects/ssp/warm.png', :alt => 'Warm palette'}
+                        %p
+                            Reds, oranges, yellows: the warmest part of the spectrum.
+
+                        %h4 
+                            'cool'
+                        %img{:src => '/img/projects/ssp/cool.png', :alt => 'Cool palette'}
+                        %p
+                            Cyans, blues, indigos: the coolest part of the spectrum.
+                %tr
+                    %td
+                        %p
+                            'rows'
+                        %p.noindent
+                            (integer)
+                    %td
+                        %p
+                            Number of rows of color chips in the palette. Practical maximum depends on the layout of your page.
+                %tr
+                    %td
+                        %p
+                            'cols'
+                        %p.noindent
+                            (integer)
+                    %td
+                        %p
+                            Number of columns of color chips in the palette. Practical maximum depends on the layout of your page.
+
+                %tr
+                    %td
+                        %p
+                            'selectMessage'
+                        %p.noindent
+                            (string)
+                    %td
+                        %p
+                            The message displayed when no color is yet selected. Default is "click to choose color".
+
+                %tr
+                    %td
+                        %p
+                            'swatchContainer'
+                        %p.noindent
+                            (string or JQuery object)
+                    %td
+                        %p
+                            JQuery/HTML object or CSS selector of the container on the page where you want to draw the picker. 
+                        %p
+                            By default, the picker will be drawn immediately after the form field you're attaching it to; even if it's a hidden form field, the picker will be drawn in the container that contains the field. For layout reasons, you may want it somewhere else, in which case you can set this option.
+                        %p 
+                            (Note: You can also use this picker with a text field instead of a hidden field, but why would you? Hex codes are not friendly to most users.)
