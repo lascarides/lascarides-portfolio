@@ -184,3 +184,89 @@
                             By default, the picker will be drawn immediately after the form field you're attaching it to; even if it's a hidden form field, the picker will be drawn in the container that contains the field. For layout reasons, you may want it somewhere else, in which case you can set this option.
                         %p 
                             (Note: You can also use this picker with a text field instead of a hidden field, but why would you? Hex codes are not friendly to most users.)
+
+                %tr
+                    %td
+                        %p
+                            'hue'
+                        %p.noindent
+                            (Array: float, float, 'rows'|'cols') 
+                    %td
+                        %p
+                            To control the color range of the palette, you can set the numerical range of each of the three color components hue, saturation and value. 
+                        %p
+                            The 'hue' option takes as an argument an array of three items. The first two are decimal numbers between 0.0 and 360.0 to indicate the hue value on the spectrum (red, orange, yellow, green, cyan, blue, violet). 
+                        %p
+                            The first number indicates the value at the beginning of the range, and the second number indicates the value at the end. You can have a higher number first and a lower number second if you want to descend.
+                        %p 
+                            The third item in the array should be either 'rows' or 'cols' to indicate in which direction the hues should be spread out. 
+                        %p
+                            Note that hue is a circular range; both 0 and 360 are red! If you want a full range of colors, you'll probably want to set this to 0 to 320 or so. Otherwise, your first and last columns will be identical!
+                        %p
+                            In the default palette, the 'hue' option is set to [0.0, 300.0, 'cols'], meaning hues are spread across palette columns from 0 on the left to 300 on the right. 
+
+                %tr
+                    %td
+                        %p
+                            'saturation'
+                        %p.noindent
+                            (Array: float, float, 'rows'|'cols') 
+                    %td
+                        %p
+                            The 'saturation' option takes as an argument an array of three items. The first two are decimal numbers between 0.0 and 100.0 to indicate the saturation of the color. 
+                        %p
+                            The first number indicates the saturation at the beginning of the range, and the second number indicates the saturation at the end. You can have a higher number first and a lower number second if you want to descend.
+                        %p 
+                            The third item in the array should be either 'rows' or 'cols' to indicate in which direction the saturation should be spread out. 
+                        %p
+                            Saturation is a measure of how vivid a color is. A saturation of 100 means full vivid reds, blues, greens, what have you (according to the hue setting). A saturation of 0 means a purely neutral gray, no matter the hue setting.
+                        %p
+                            In the default palette, the 'saturation' option is set to [70.0, 100.0, 'rows'], meaning that the topmost row has a saturation of 70 and the bottommost has a saturation of 100. 
+
+                %tr
+                    %td
+                        %p
+                            'value'
+                        %p.noindent
+                            (Array: float, float, 'rows'|'cols') 
+                    %td
+                        %p
+                            The 'value' option takes as an argument an array of three items. The first two are decimal numbers between 0.0 and 100.0 to indicate the value of the color. 
+                        %p
+                            The first number indicates the value at the beginning of the range, and the second number indicates the value at the end. You can have a higher number first and a lower number second if you want to descend.
+                        %p 
+                            The third item in the array should be either 'rows' or 'cols' to indicate in which direction the color value should be spread out. 
+                        %p
+                            Color Value is a measure of how light or dark a color is. A value of 100 means the brightest color (if saturation is high), or pastel or white colors (if saturation is low). A saturation of 0 means black, no matter the setting of the other two numbers.
+                        %p
+                            In the default palette, the 'value' option is set to [40.0, 98.0, 'rows'], meaning that the topmost row has a color value of 40 and the bottommost has a value of 98. 
+
+    .row.featuredRow
+        .span3
+            %h3.pullHed
+                Customized examples
+        .span9
+
+            %h4
+                With 'palette':'pastel'
+
+            %form
+                %input#myCustomField{:type => 'hidden'}
+
+            %script{:type => "text/javascript"}
+                $("#myCustomField").simpleSwatchPicker({'palette' : 'pastel'});
+
+            %code= "$('#myCustomField').simpleSwatchPicker({\n\t'palette' : 'pastel'\n});"
+
+
+            %h4
+                12×12 grid with custom palette
+
+            %form
+                %input#myCustomField2{:type => 'hidden'}
+
+            %script{:type => "text/javascript"}
+                $('#myCustomField2').simpleSwatchPicker({'rows' : 12, 'cols' : 12, 'hue':[5.0,200.0,'rows'], 'saturation':[25.0,75.0,'cols'], 'value':[100.0,30.0,'cols']});
+
+            %code= "$('#myCustomField2').simpleSwatchPicker({\n\t'rows' : 12,\n\t'cols' : 12,\n\t'hue':[5.0,200.0,'rows'],\n\t'saturation':[25.0,75.0,'cols'],\n\t'value':[100.0,30.0,'cols']\n});"
+
