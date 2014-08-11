@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Maximum Data Ink</title>
+    <link>http://lascarid.es</link>
+    <pubDate>2012-10-26 10:31:00 +1300</pubDate>
+    <item>
+      <title>Tool-building time</title>
+      <link>http://lascarid.es/blog/2012/meta/tool-building-time</link>
+      <pubDate>2012-10-25</pubDate>
+      <description>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html lang='en'&gt;
+  &lt;head&gt;
+    &lt;meta charset='utf-8' /&gt;
+    &lt;meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' /&gt;
+    &lt;title&gt;Tool-building time&lt;/title&gt;
+    &lt;meta content='Programmer, designer, researcher, author.' name='description' /&gt;
+    &lt;meta content='Michael Lascarides' name='author' /&gt;
+    &lt;link href='/css/bootstrap.min.css' rel='stylesheet' /&gt;
+    &lt;link href='/css/bootstrap-responsive.min.css' rel='stylesheet' /&gt;
+    &lt;link href='/css/michael.css' rel='stylesheet' /&gt;
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src='//html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+    &lt;link href='/assets/ico/favicon.ico' rel='shortcut icon' /&gt;
+    &lt;script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src='/js/bootstrap.min.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src='/js/michael.js' type='text/javascript'&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body class='inside'&gt;
+    &lt;div class='container'&gt;
+      &lt;div class='row'&gt;
+        &lt;div class='span10 offset1'&gt;
+          &lt;h1&gt;
+            &lt;a href='/'&gt;Michael Lascarides&lt;/a&gt;
+            &lt;span&gt;/ Blog&lt;/span&gt;
+          &lt;/h1&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class='row'&gt;
+
+        &lt;div class='span7 offset1'&gt;
+        &lt;h2&gt;Tool-building time &lt;/h2&gt;
+
+&lt;h4 class="date"&gt;2012-10-25&lt;/h4&gt;
+
+&lt;p&gt;After spending almost four years working as part of the web team at the New York Public Library, I recently set off on my own. &lt;/p&gt;
+
+&lt;p&gt;The intervening time.&lt;/p&gt;
+
+&lt;p&gt;Return to programming. Github&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve been looking for a good blogging solution, and poking around with &lt;/p&gt;
+
+&lt;p&gt;static blog generators&lt;/p&gt;
+
+&lt;p&gt;led me to Jekyll, which is being used as the page-generating engine for Github&lt;/p&gt;
+
+&lt;p&gt;developer of Jekyll is working on a new project called Ruhoh which &lt;/p&gt;
+
+&lt;p&gt;drawbacks: no support for Haml, fixed date formats, odd templating language&lt;/p&gt;
+
+&lt;p&gt;upside: fast, easy publishing, not too hard to set up, does what it says on the tin.&lt;/p&gt;
+
+&lt;p&gt;Sinatra&lt;/p&gt;
+
+&lt;p&gt;twitter bootstrap&lt;/p&gt;
+
+&lt;p&gt;the technology report&lt;/p&gt;
+
+&lt;p&gt;d3 visualization&lt;/p&gt;
+
+&lt;p&gt;posting things on github&lt;/p&gt;
+
+&lt;p&gt;what&amp;#39;s next?&lt;/p&gt;
+
+&lt;p&gt;projects&lt;/p&gt;
+
+&lt;p&gt;nypl and cooper hewitt&lt;/p&gt;
+
+&lt;p&gt;infomaki&lt;/p&gt;
+
+&lt;p&gt;world data&lt;/p&gt;
+
+
+&lt;ul class="tag_box"&gt;
+  &lt;li&gt;
+    &lt;a href="/blog/categories#meta-ref"&gt;meta &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;&lt;/ul&gt;
+
+&lt;ul class="tag_box"&gt;
+  &lt;li&gt;
+    &lt;a href="/blog/tags#tools-ref"&gt;tools &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#ruhoh-ref"&gt;ruhoh &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#jekyll-ref"&gt;jekyll &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#haml-ref"&gt;haml &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#twitter bootstrap-ref"&gt;twitter bootstrap &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#github-ref"&gt;github &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#d3-ref"&gt;d3 &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;  &lt;li&gt;
+    &lt;a href="/blog/tags#sinatra-ref"&gt;sinatra &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;&lt;/ul&gt;
+
+&lt;div class="pagination"&gt;
+&lt;/div&gt;
+  
+
+
+        &lt;/div&gt;
+
+        &lt;div class='span3 side_nav'&gt;
+          &lt;ul class='nav nav-pills nav-stacked'&gt;
+              
+                &lt;li&gt;&lt;a href="/blog/archive"&gt;Archive&lt;/a&gt;&lt;/li&gt;
+              
+                &lt;li&gt;&lt;a href="/blog/tags"&gt;Tags&lt;/a&gt;&lt;/li&gt;
+              
+                &lt;li&gt;&lt;a href="/blog/categories"&gt;Categories&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id='footer'&gt;
+      &lt;div class='container'&gt;
+        &lt;div class='row'&gt;
+          &lt;div class='span5 offset1'&gt;
+            &lt;!-- AddThis Button BEGIN --&gt;
+            &lt;div class='addthis_toolbox addthis_default_style addthis_32x32_style'&gt;
+              &lt;a class='addthis_button_preferred_1'&gt;&lt;/a&gt;
+              &lt;a class='addthis_button_preferred_2'&gt;&lt;/a&gt;
+              &lt;a class='addthis_button_preferred_3'&gt;&lt;/a&gt;
+              &lt;a class='addthis_button_preferred_4'&gt;&lt;/a&gt;
+              &lt;a class='addthis_button_compact'&gt;&lt;/a&gt;
+              &lt;a class='addthis_counter addthis_bubble_style'&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5059901865102622' type='text/javascript'&gt;&lt;/script&gt;
+          &lt;/div&gt;
+          &lt;div class='span5 tinylinks'&gt;
+            &lt;a href='/assets/pdf/michael-lascarides-cv.pdf'&gt;My CV&lt;/a&gt;
+            &amp;middot;
+            &lt;a href='/colophon'&gt;Colophon&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src='/js/ga.js' type='text/javascript'&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+  </channel>
+</rss>

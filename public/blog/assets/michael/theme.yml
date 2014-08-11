@@ -1,0 +1,20 @@
+{
+  "stylesheets" : {
+    "default" : [
+    ],
+   
+    "widgets" : {
+    }
+    
+  },
+
+  "javascripts" : {
+    "default" : [
+    ]
+  },
+  
+  "manifest" : {
+    "author" : "Michael Lascarides",
+    "website" : "http://lascarid.es"
+  }
+}

@@ -1,0 +1,32 @@
+---
+layout : default
+---
+
+<h2>{{ page.title }} </h2>
+{{# page.tagline }} <h3>{{ . }}</h3>{{/ page.tagline }}
+<h4 class="date">{{ page.date }}</h4>
+
+{{{ content }}}
+
+<ul class="tag_box">
+{{# page.categories?to_categories }}
+  {{> categories_list }}
+{{/ page.categories?to_categories }}
+</ul>
+
+<ul class="tag_box">
+{{# page.tags?to_tags }}
+  {{> tags_list }}
+{{/ page.tags?to_tags }}
+</ul>
+
+<div class="pagination">
+  {{# page?previous }}
+    <a href="{{ url }}" title="{{ title }}" class="btn">&larr; Previous</a></li>
+  {{/ page?previous }}
+  {{# page?next }}
+    <a href="{{ url }}" title="{{ title }}" class="btn">Next &rarr;</a>
+  {{/ page?next }}
+</div>
+  
+
