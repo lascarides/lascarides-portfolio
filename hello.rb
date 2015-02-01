@@ -11,13 +11,13 @@ get '/' do
 	haml :index
 end
 
-get '/blog' do
-	send_file File.join(settings.public_folder, 'blog/index.html')
-end
+# get '/blog' do
+# 	send_file File.join(settings.public_folder, 'blog/index.html')
+# end
 
-get '/blog/*' do
-	send_file File.join(settings.public_folder, "blog/#{params[:splat].first}/index.html")
-end
+# get '/blog/*' do
+# 	send_file File.join(settings.public_folder, "blog/#{params[:splat].first}/index.html")
+# end
 
 get '/projects' do
 	params[:page] = 'projects'
