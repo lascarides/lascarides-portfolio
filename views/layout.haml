@@ -34,9 +34,12 @@
                     = yield
                 .span3.side_nav
                     %ul.nav.nav-pills.nav-stacked
-                        - ['work', 'art', 'projects', 'writing', 'teaching', 'speaking', 'blog', 'contact'].each do |section|
+                        - ['work', 'art', 'projects', 'writing', 'teaching', 'speaking', 'contact'].each do |section|
                             %li{:class => params[:page] == section ? 'active' : '' }
                                 %a{:href => "/" + section }= section
+                        %li
+                            %a{:href => "https://medium.com/@lascarides" } blog
+                        
 
 
         #footer
