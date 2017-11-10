@@ -107,14 +107,11 @@ p.noindent {
   text-indent: 0; }
 
 .table td {
-  border-color: #9a9a90;
-  border-style: dotted; }
+  border: 1px dotted #9a9a90; }
 .table th {
   background: #9a9a90;
   color: white;
-  border: 0px solid #9a9a90; }
-.table tr.first td {
-  border: 0px solid #9a9a90; }
+  border: 1px solid #9a9a90; }
 
 .nav-stacked {
   text-transform: uppercase;

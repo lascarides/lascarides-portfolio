@@ -157,18 +157,13 @@ p.noindent {
 
 .table {
 	td {
-		border-color: $mediumGrey;
-		border-style: dotted;
+		border: 1px dotted $mediumGrey;
 	}
 	th {
 		background: $mediumGrey;
 		color: white;
-		border: 0px solid $mediumGrey;
+		border: 1px solid $mediumGrey;
 	}
-	tr.first td {
-		border: 0px solid $mediumGrey;
-	}
-
 }
 
 .nav-stacked {
